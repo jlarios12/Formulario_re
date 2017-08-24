@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+   <html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+    " integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <title>Formulario <*)))>{ </title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+     body{background-image:url(http://k31.kn3.net/taringa/9/8/9/C/6/F/TheOgaitnax/F61.jpg);
+           background-size:cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           font-family: monospace;
+        }
+           form{
+             width: 600px;
+             margin:auto;
+             background: rgba(0, 0, 0, 0.4);
+             padding: 10px 20px;
+             box-sizing: border-box;
+             margin-top: 20px;
+             border-radius: 7px;
+             margin-top: 50px;
+             margin-bottom: 20px;
+           }
+
+
+           h2{color:#CEF6F5;
+             text-align: center;
+             padding-top:25px;
+             font-size: 30px;
+             margin-bottom: 20px;
+
+             }
+
+
+        input{ width: 100%;
+               margin-bottom:20px;
+               padding: 7px;
+               box-sizing: border-box;
+               color:#D7DF01;
+               font-size:40px;
+               border: none;
+             }
+
+       @media(max-width:480px){
+              form{ width: 100%;
+            }
+
+            }
+
+             .sexo{
+                 padding-bottom:10px;
+                }
+
+
+
+             .form-group{
+                     padding-top:10px;
+                    }
+
+                    ::placeholder{
+                     color:#CEF6F5;
+                     font-size: 17px;
+                          }
+
+                 label{
+                     color:white;
+                    font-size:17px;
+                    margin-left:15%;
+                    font-family: monospace;
+                    font-weight: lighter;
+                 }
+
+             .material-icons{
+                            color:white;
+                          }
+
+            .material-icons:hover{
+                            color:#00FFFF;
+                          }
+
+                 .botones{
+                            text-align: center;
+                            letter-spacing:50px;
+                            padding-top: 10px;
+                            padding-bottom:10px;
+
+                          }
+
+        form,h2{
+              -moz-animation-duration:2;
+              -moz-animation-delay:1s;
+
+             }
+
+        h4{
+            color: white;
+            margin-left: 15%;
+            font-size: 17px;
+        }
+
+</style>
+  </head>
+  <body>
+    <form class="animated bounceInLeft" action="personas_gestion.php"  method="post">
+
+        <h2 class="animated  slideInRight">Formulario de Registro</h2>
+        <input type="text" name="nombre" placeholder="nombre" value="" required>
+        <input type="text" name="apellido" placeholder="apellido" value=""  >
+        <input type="text" name="nacimiento" placeholder="nacimiento 0000-00-00" value="" required>
+        <div class="input-field">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" pattern='\d+' type="tel" name="tel" placeholder="telefono" class="validate" >
+          </div>
+          <div class="input-field">
+              <i class="material-icons prefix">mail</i>
+              <input id="icon_telephone" type="email" name="email" placeholder="correo electronico"
+               pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" class="validate">
+            </div>
+         <input type="password" name="pass" placeholder="contraseña solo numeros" value="" required>
+
+          <div class="botones">
+            <button class="btn waves-effect waves-light" type="submit" name="btn1">enviar
+              <hr>
+     <i class="material-icons right">send</i>
+   </button>
+   <button class="btn waves-effect waves-light" type=reset name="btn2">cancelar
+
+  </button>
+          </div>
+
+    </form>
+    <h5> jose luis larios 2017</h5>
+  </body>
+</html>
